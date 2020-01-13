@@ -1,0 +1,27 @@
+{
+    "name": "13sai/saiapi",
+    "description": "api framework",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.3",
+        "psr/container": "^1.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "13sai",
+            "email": "sai0556@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": 
+    {
+        "psr-4":{
+            "Library\\":"library/",
+            "App\\": "app/"
+        },
+        "files": [
+            "library/Functions.php"
+        ]
+    }
+}
