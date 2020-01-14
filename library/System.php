@@ -7,6 +7,8 @@ defined('SF_START_TIME') or define('SF_START_TIME', microtime(true));
 // 核心文件目录
 defined('SF_LIBRARY_PATH') or define('SF_LIBRARY_PATH', __DIR__.DIRECTORY_SEPARATOR);
 // 应用目录
-defined('SF_APP_PATH') or define('SF_APP_PATH', __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR);
+defined('SF_APP_PATH') or define('SF_APP_PATH', dirname(__DIR__).DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR);
 // 入口目录
-defined('SF_PUBLIC_PATH') or define('SF_PUBLIC_PATH', __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR);
+defined('SF_PUBLIC_PATH') or define('SF_PUBLIC_PATH', dirname(__DIR__).DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR);
+// 工作目录
+defined('SF_WORK_PATH') or define('SF_WORK_PATH', dirname(__DIR__).DIRECTORY_SEPARATOR);

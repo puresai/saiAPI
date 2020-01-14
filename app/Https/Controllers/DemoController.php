@@ -11,7 +11,10 @@ class DemoController extends Controller
 {
     public function welcome($params)
     {
-        return $this->response->json(['hello' => 'welcome']);
+
+        // session_destro();
+        // $_SESSION['sssss'] = 'ccc';
+        return $this->response->json(['hello' => $_SESSION]);
     }
 
     public function test($params)

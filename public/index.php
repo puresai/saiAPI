@@ -18,6 +18,15 @@ if ($config['debug']) {
 // composer自动加载
 require __DIR__ . '/../vendor/autoload.php';
 
+// session
+$session = 'Library\\Sessions\\'.ucfirst($config['session']['client']).'Session';
+$handler = new $session($config['session']['config']);
+
+session_set_save_handler($handler, true);
+session_start();
+
+// register_shutdown_function('session_write_close');
+
 // 实例化应用并运行
 $app = new Library\Application(new Library\Https\Request() ,$config);
 $app->run();

@@ -3,7 +3,7 @@
  *自定义配置
  */
 return [
-    'debug' => false,
+    'debug' => true,
     'route' => [
         '' => 'demo/welcome',
         'test' => 'demo/test',
