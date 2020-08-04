@@ -6,3 +6,5 @@
 
 
 因公众号文章将文章部分链接屏蔽，所以文章也更新到git的note目录。
+
+国内可访问：https://gitee.com/sai0556/saiAPI
